@@ -1,0 +1,21 @@
+
+message training_sample_lscnn {
+  optional bytes x                   = 1; 
+  repeated int32 x_shape             = 2;
+  optional bytes label               = 3;
+  repeated int32 label_shape         = 4;
+  //optional bytes ldm_index           = 5;
+  //repeated int32 ldm_index_shape     = 6;
+  optional bytes disk_data           = 7;
+  repeated int32 disk_data_shape     = 8;
+  optional bytes disk_indices        = 9;
+  repeated int32 disk_indices_shape  =10;
+  optional bytes disk_indptr         =11;
+  repeated int32 disk_indptr_shape   =12;
+  optional bytes layer_begin         =13;
+  repeated int32 layer_begin_shape   =14;
+  optional bytes layer_end           =15;
+  repeated int32 layer_end_shape     =16;
+  optional bytes filename            =17;
+}
+

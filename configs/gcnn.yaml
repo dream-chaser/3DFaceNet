@@ -1,0 +1,103 @@
+{
+    out_path: !!str "./experiments/",
+    n_epochs: 10,
+    iter_per_epoch: 180,
+    iter_eval: 5,
+    n_batches_valid: 20,
+    n_batches_train: 180,
+    train_batch_num: 8,
+    seed: &seed 666,
+    rng: &rng !!python/object/apply:numpy.random.RandomState {args:[*seed]},
+    #w_constraints should be refactored as this version implies that you call
+    #eval to get the proper functions
+    w_constraints: !!str "[
+      lambda x : x, lambda x : x,
+      lambda x : x, 
+      lambda x : x,
+      lambda x : x,
+      lambda x : x 
+ ]", 
+    layers: [
+
+        !!python/object/new:layers.layers_lscnn.MLPLayer {
+        args:[
+          *rng, 16, 16, 'FC1'],
+        kwds:{
+          'activation': !!python/name:layers.utils.relu ,
+        }
+        }
+         ,
+
+        !!python/object/new:layers.layers_lscnn.GCNNLayer {
+        args:[
+        #GCNNLayer(rng, nin, nout, ntheta, nrho, layer_name, activation=relu):
+          *rng, 16, 12, 8, 2, 'CONV0'],
+        kwds:{
+          'activation': !!python/name:layers.utils.relu_delve ,
+        }
+        }
+        ,
+
+        !!python/object/new:layers.layers_lscnn.GCNNLayer {
+        args:[
+        #GCNNLayer(rng, nin, nout, ntheta, nrho, layer_name, activation=relu):
+          *rng, 12, 10, 8, 2, 'CONV1'],
+        kwds:{
+          'activation': !!python/name:layers.utils.relu_delve ,
+        }
+        }
+        ,
+
+        !!python/object/new:layers.layers_lscnn.GCNNLayer {
+        args:[
+        #GCNNLayer(rng, nin, nout, ntheta, nrho, layer_name, activation=relu):
+          *rng, 10, 8, 8, 2, 'CONV2'],
+        kwds:{
+          'activation': !!python/name:layers.utils.relu_delve ,
+        }
+        }
+        ,
+
+        !!python/object/new:layers.layers_lscnn.MaxLayer {
+        args:[
+          'Max-Pooling']
+        }
+        ,
+#
+#        !!python/object/new:layers.layers_lscnn.GCNNLayer {
+#        args:[
+#        #GCNNLayer(rng, nin, nout, ntheta, nrho, max_rho, sigma, layer_name, activation=relu):
+#          *rng, 8, 8, 8, 5, 100, 10, 'CONV1'],
+#        kwds:{
+#          'activation': !!python/name:layers.utils.relu ,
+#        }
+#        }
+#        ,
+
+#        !!python/object/new:layers.layers_lscnn.StatisticLayer {
+#        args:[
+#          *rng, 64, 7, 'SL1'],
+#        }
+
+#        !!python/object/new:layers.layers_lscnn.MLPLayer_FC {
+#        args:[
+#          *rng, 78408, 4096, 'FC-2'],
+#        kwds:{
+#          'activation': !!python/name:layers.utils.relu ,
+#        }
+#        }
+#        ,
+#        
+#        !!python/object/new:layers.layers_lscnn.MLPLayer_FC {
+#        args:[
+#          *rng, 4096, 7, 'FC-last']
+#        }
+        !!python/object/new:layers.layers_lscnn.MLPLayer_FC {
+        args:[
+        # ldm_num is 68, class_num is 7
+          *rng, 544, 7, 'FC-last']
+        }
+
+      ],
+    drop: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+}

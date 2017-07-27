@@ -1,0 +1,176 @@
+2017/07/16 09:30:19 PM : INFO : Experiment starts
+2017/07/16 09:30:19 PM : INFO : Saving experiment data to ./experiments/gcnn_l2reg_0.000000
+2017/07/16 09:30:19 PM : INFO : Setting random state...
+2017/07/16 09:30:19 PM : INFO : ...done 0.000018
+2017/07/16 09:30:19 PM : INFO : Creating the model...
+2017/07/16 09:30:19 PM : INFO : ...done 0.000520
+2017/07/16 09:30:19 PM : INFO : Checking if there is already a best model to load...
+2017/07/16 09:30:19 PM : INFO : ...saving initial model
+2017/07/16 09:30:19 PM : INFO : ...done 0.000422
+2017/07/16 09:30:19 PM : INFO : Cost definition...
+2017/07/16 09:30:20 PM : INFO : ...done 0.065537
+2017/07/16 09:30:20 PM : INFO : Starting training...
+2017/07/16 09:30:20 PM : INFO : Getting the gradient...
+2017/07/16 09:30:20 PM : INFO : ...done 0.077725
+2017/07/16 09:30:20 PM : INFO : Checking if there exist a training checkpoint...
+2017/07/16 09:30:20 PM : INFO : ...starting fresh
+2017/07/16 09:30:20 PM : INFO : Creating update rules...
+2017/07/16 09:30:20 PM : INFO : ...done 0.092581
+2017/07/16 09:30:20 PM : INFO : Creating train function...
+2017/07/16 09:30:30 PM : INFO : ...done 9.903715
+2017/07/16 09:30:30 PM : INFO : Getting validation data...
+2017/07/16 09:32:37 PM : INFO : ...done 126.935137
+2017/07/16 09:43:01 PM : INFO : Experiment starts
+2017/07/16 09:43:01 PM : INFO : Saving experiment data to ./experiments/gcnn_l2reg_0.000000
+2017/07/16 09:43:01 PM : INFO : Setting random state...
+2017/07/16 09:43:01 PM : INFO : ...done 0.000028
+2017/07/16 09:43:01 PM : INFO : Creating the model...
+2017/07/16 09:43:01 PM : INFO : ...done 0.000783
+2017/07/16 09:43:01 PM : INFO : Checking if there is already a best model to load...
+2017/07/16 09:43:01 PM : INFO : ...saving initial model
+2017/07/16 09:43:01 PM : INFO : ...done 0.000962
+2017/07/16 09:43:01 PM : INFO : Cost definition...
+2017/07/16 09:43:01 PM : INFO : ...done 0.109423
+2017/07/16 09:43:01 PM : INFO : Starting training...
+2017/07/16 09:43:01 PM : INFO : Getting the gradient...
+2017/07/16 09:43:01 PM : INFO : ...done 0.098350
+2017/07/16 09:43:01 PM : INFO : Checking if there exist a training checkpoint...
+2017/07/16 09:43:01 PM : INFO : ...starting fresh
+2017/07/16 09:43:01 PM : INFO : Creating update rules...
+2017/07/16 09:43:01 PM : INFO : ...done 0.127049
+2017/07/16 09:43:01 PM : INFO : Creating train function...
+2017/07/16 09:43:06 PM : INFO : ...done 4.681622
+2017/07/16 09:43:06 PM : INFO : Getting validation data...
+2017/07/16 09:43:58 PM : INFO : ...done 52.276815
+2017/07/16 09:43:58 PM : INFO : Measuring performance on the validation set...
+2017/07/16 09:44:17 PM : INFO : Accuracy is 0.152778
+2017/07/16 09:44:17 PM : INFO : ...done 19.059056
+2017/07/16 09:44:17 PM : INFO : Starting training...
+2017/07/16 09:44:17 PM : INFO : Getting 1 train data...
+2017/07/16 09:47:53 PM : INFO : ...done 215.642953
+2017/07/16 09:48:34 PM : INFO : ...cost 1.984255 n_updates 162 (40.81sec)
+2017/07/16 09:49:10 PM : INFO : ...cost 1.861066 n_updates 324 (35.86sec)
+2017/07/16 09:49:45 PM : INFO : ...cost 1.835312 n_updates 486 (35.30sec)
+2017/07/16 09:50:24 PM : INFO : ...cost 1.820207 n_updates 648 (38.95sec)
+2017/07/16 09:50:25 PM : INFO : Accuracy is 0.100000
+2017/07/16 09:50:25 PM : INFO : Saving training snapshot for current model
+2017/07/16 09:50:26 PM : INFO : Measuring performance on the validation set...
+2017/07/16 09:50:44 PM : INFO : Accuracy is 0.166667
+2017/07/16 09:50:44 PM : INFO : Saving training snapshot for best validation 
+2017/07/16 09:50:44 PM : INFO : 
+===== Monitor =====
+2017/07/16 09:50:45 PM : INFO : FC1-W : minv -0.210617 maxv 0.211817 L2 5.463239
+2017/07/16 09:50:45 PM : INFO : FC1-b : minv 0.481337 maxv 0.517678 L2 1.999044
+2017/07/16 09:50:45 PM : INFO : CONV0-a : minv -0.513199 maxv 0.498807 L2 20.734814
+2017/07/16 09:50:45 PM : INFO : FC-last-W : minv -0.140446 maxv 0.108794 L2 3.809491
+2017/07/16 09:50:45 PM : INFO : FC-last-b : minv -1.637837 maxv 0.467051 L2 1.992853
+2017/07/16 09:50:45 PM : INFO : ===================
+2017/07/16 09:50:45 PM : INFO : Getting 2 train data...
+2017/07/16 09:55:38 PM : INFO : ...done 293.404323
+2017/07/16 09:56:22 PM : INFO : ...cost 1.810979 n_updates 810 (44.44sec)
+2017/07/16 09:57:13 PM : INFO : ...cost 1.805004 n_updates 972 (50.14sec)
+2017/07/16 09:58:01 PM : INFO : ...cost 1.801272 n_updates 1134 (48.09sec)
+2017/07/16 09:58:54 PM : INFO : ...cost 1.799000 n_updates 1296 (53.70sec)
+2017/07/16 09:58:57 PM : INFO : Accuracy is 0.100000
+2017/07/16 09:58:57 PM : INFO : Saving training snapshot for current model
+2017/07/16 09:58:57 PM : INFO : Measuring performance on the validation set...
+2017/07/16 09:59:13 PM : INFO : Accuracy is 0.166667
+2017/07/16 09:59:13 PM : INFO : 
+===== Monitor =====
+2017/07/16 09:59:13 PM : INFO : FC1-W : minv -0.211166 maxv 0.213325 L2 5.472065
+2017/07/16 09:59:13 PM : INFO : FC1-b : minv 0.476868 maxv 0.522142 L2 2.001630
+2017/07/16 09:59:13 PM : INFO : CONV0-a : minv -0.513199 maxv 0.498807 L2 20.735241
+2017/07/16 09:59:13 PM : INFO : FC-last-W : minv -0.140446 maxv 0.108794 L2 3.809256
+2017/07/16 09:59:13 PM : INFO : FC-last-b : minv -3.449375 maxv 0.402234 L2 3.585326
+2017/07/16 09:59:13 PM : INFO : ===================
+2017/07/16 09:59:13 PM : INFO : Getting 3 train data...
+2017/07/16 10:04:26 PM : INFO : ...done 312.266473
+2017/07/16 10:05:10 PM : INFO : ...cost 1.797541 n_updates 1458 (44.29sec)
+2017/07/16 10:05:51 PM : INFO : ...cost 1.796739 n_updates 1620 (41.27sec)
+2017/07/16 10:06:35 PM : INFO : ...cost 1.796146 n_updates 1782 (43.50sec)
+2017/07/16 10:07:14 PM : INFO : ...cost 1.795932 n_updates 1944 (39.11sec)
+2017/07/16 10:07:15 PM : INFO : Accuracy is 0.200000
+2017/07/16 10:07:15 PM : INFO : Saving training snapshot for current model
+2017/07/16 10:07:15 PM : INFO : Measuring performance on the validation set...
+2017/07/16 10:07:34 PM : INFO : Accuracy is 0.166667
+2017/07/16 10:07:34 PM : INFO : 
+===== Monitor =====
+2017/07/16 10:07:34 PM : INFO : FC1-W : minv -0.211166 maxv 0.213325 L2 5.472065
+2017/07/16 10:07:34 PM : INFO : FC1-b : minv 0.476868 maxv 0.522142 L2 2.001630
+2017/07/16 10:07:34 PM : INFO : CONV0-a : minv -0.513199 maxv 0.498807 L2 20.735241
+2017/07/16 10:07:34 PM : INFO : FC-last-W : minv -0.140446 maxv 0.108794 L2 3.809256
+2017/07/16 10:07:34 PM : INFO : FC-last-b : minv -4.622321 maxv 0.336836 L2 4.692121
+2017/07/16 10:07:34 PM : INFO : ===================
+2017/07/16 10:07:34 PM : INFO : Getting 4 train data...
+2017/07/16 10:14:59 PM : INFO : ...done 444.944411
+2017/07/16 10:16:03 PM : INFO : ...cost 1.795722 n_updates 2106 (63.96sec)
+2017/07/16 10:17:10 PM : INFO : ...cost 1.795516 n_updates 2268 (67.19sec)
+2017/07/16 10:18:17 PM : INFO : ...cost 1.795371 n_updates 2430 (66.32sec)
+2017/07/16 10:19:24 PM : INFO : ...cost 1.795198 n_updates 2592 (67.05sec)
+2017/07/16 10:19:27 PM : INFO : Accuracy is 0.100000
+2017/07/16 10:19:27 PM : INFO : Saving training snapshot for current model
+2017/07/16 10:19:27 PM : INFO : Measuring performance on the validation set...
+2017/07/16 10:19:48 PM : INFO : Accuracy is 0.166667
+2017/07/16 10:19:48 PM : INFO : 
+===== Monitor =====
+2017/07/16 10:19:48 PM : INFO : FC1-W : minv -0.211166 maxv 0.213325 L2 5.472065
+2017/07/16 10:19:48 PM : INFO : FC1-b : minv 0.476868 maxv 0.522142 L2 2.001630
+2017/07/16 10:19:48 PM : INFO : CONV0-a : minv -0.513199 maxv 0.498807 L2 20.735241
+2017/07/16 10:19:48 PM : INFO : FC-last-W : minv -0.140446 maxv 0.108794 L2 3.809256
+2017/07/16 10:19:48 PM : INFO : FC-last-b : minv -5.205601 maxv 0.268836 L2 5.243884
+2017/07/16 10:19:48 PM : INFO : ===================
+2017/07/16 10:19:48 PM : INFO : Getting 5 train data...
+2017/07/16 10:24:24 PM : INFO : ...done 276.202925
+2017/07/16 10:25:20 PM : INFO : ...cost 1.795301 n_updates 2754 (55.94sec)
+2017/07/16 10:26:13 PM : INFO : ...cost 1.795319 n_updates 2916 (52.62sec)
+2017/07/16 10:27:06 PM : INFO : ...cost 1.795173 n_updates 3078 (53.17sec)
+2017/07/16 10:27:59 PM : INFO : ...cost 1.795214 n_updates 3240 (53.11sec)
+2017/07/16 10:28:02 PM : INFO : Accuracy is 0.300000
+2017/07/16 10:28:02 PM : INFO : Saving training snapshot for current model
+2017/07/16 10:28:02 PM : INFO : Measuring performance on the validation set...
+2017/07/16 10:28:23 PM : INFO : Accuracy is 0.166667
+2017/07/16 10:28:23 PM : INFO : 
+===== Monitor =====
+2017/07/16 10:28:23 PM : INFO : FC1-W : minv -0.211166 maxv 0.213325 L2 5.472065
+2017/07/16 10:28:23 PM : INFO : FC1-b : minv 0.476868 maxv 0.522142 L2 2.001630
+2017/07/16 10:28:23 PM : INFO : CONV0-a : minv -0.513199 maxv 0.498807 L2 20.735241
+2017/07/16 10:28:23 PM : INFO : FC-last-W : minv -0.140446 maxv 0.108794 L2 3.809256
+2017/07/16 10:28:23 PM : INFO : FC-last-b : minv -5.593810 maxv 0.191523 L2 5.612493
+2017/07/16 10:28:23 PM : INFO : ===================
+2017/07/16 10:28:23 PM : INFO : Getting 6 train data...
+2017/07/16 10:35:27 PM : INFO : ...done 424.734115
+2017/07/16 10:36:32 PM : INFO : ...cost 1.795150 n_updates 3402 (64.89sec)
+2017/07/16 10:37:30 PM : INFO : ...cost 1.795093 n_updates 3564 (58.21sec)
+2017/07/16 10:38:34 PM : INFO : ...cost 1.794933 n_updates 3726 (63.48sec)
+2017/07/16 10:39:33 PM : INFO : ...cost 1.795067 n_updates 3888 (58.71sec)
+2017/07/16 10:39:35 PM : INFO : Accuracy is 0.100000
+2017/07/16 10:39:35 PM : INFO : Saving training snapshot for current model
+2017/07/16 10:39:35 PM : INFO : Measuring performance on the validation set...
+2017/07/16 10:39:55 PM : INFO : Accuracy is 0.166667
+2017/07/16 10:39:55 PM : INFO : 
+===== Monitor =====
+2017/07/16 10:39:55 PM : INFO : FC1-W : minv -0.211166 maxv 0.213325 L2 5.472065
+2017/07/16 10:39:55 PM : INFO : FC1-b : minv 0.476868 maxv 0.522142 L2 2.001630
+2017/07/16 10:39:55 PM : INFO : CONV0-a : minv -0.513199 maxv 0.498807 L2 20.735241
+2017/07/16 10:39:55 PM : INFO : FC-last-W : minv -0.140446 maxv 0.108794 L2 3.809256
+2017/07/16 10:39:55 PM : INFO : FC-last-b : minv -5.890586 maxv 0.124569 L2 5.897386
+2017/07/16 10:39:55 PM : INFO : ===================
+2017/07/16 10:39:55 PM : INFO : Getting 7 train data...
+2017/07/16 10:43:46 PM : INFO : ...done 230.857923
+2017/07/16 10:44:40 PM : INFO : ...cost 1.795062 n_updates 4050 (53.45sec)
+2017/07/16 10:45:25 PM : INFO : ...cost 1.794947 n_updates 4212 (45.73sec)
+2017/07/16 10:46:16 PM : INFO : ...cost 1.794927 n_updates 4374 (50.43sec)
+2017/07/16 10:47:01 PM : INFO : ...cost 1.794772 n_updates 4536 (45.34sec)
+2017/07/16 10:47:04 PM : INFO : Accuracy is 0.200000
+2017/07/16 10:47:04 PM : INFO : Saving training snapshot for current model
+2017/07/16 10:47:04 PM : INFO : Measuring performance on the validation set...
+2017/07/16 10:47:23 PM : INFO : Accuracy is 0.166667
+2017/07/16 10:47:23 PM : INFO : 
+===== Monitor =====
+2017/07/16 10:47:23 PM : INFO : FC1-W : minv -0.211166 maxv 0.213325 L2 5.472065
+2017/07/16 10:47:23 PM : INFO : FC1-b : minv 0.476868 maxv 0.522142 L2 2.001630
+2017/07/16 10:47:23 PM : INFO : CONV0-a : minv -0.513199 maxv 0.498807 L2 20.735241
+2017/07/16 10:47:23 PM : INFO : FC-last-W : minv -0.140446 maxv 0.108794 L2 3.809256
+2017/07/16 10:47:23 PM : INFO : FC-last-b : minv -6.134155 maxv 0.060224 L2 6.135161
+2017/07/16 10:47:23 PM : INFO : ===================
+2017/07/16 10:47:23 PM : INFO : Getting 8 train data...
